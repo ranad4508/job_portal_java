@@ -1,11 +1,41 @@
 <resources>
-    <string name="app_name">Job_portal</string>
+    <string name="app_name">Job Sathi</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="loginTitle">Welcome Back</string>
+    <string name="loginSubtitle">Discover Limitless Choices and Umatched Convenience</string>
     <string name="previous">Previous</string>
+    <string name="signUpTitle">Let\'s Create Your Account</string>
+
+<!--    String all pages for home page-->
+    <string name="greeting">Hello, Dinesh!</string>
+    <string name="seeAllJobs">See all</string>
+    <string name="seeAllTips">See all</string>
+    <string name="readMoreTips">Read more</string>
+    <string name="allJobsButton">All Job</string>
+    <string name="writerButton">Writer</string>
+    <string name="designButton">Design</string>
+    <string name="financeButton">Finance</string>
+    <string name="jobRecommendation">Job Recommendation</string>
+    <string name="tipsForYou">Tips for you</string>
+    <string name="howToFindJob">How to find a perfect job for you</string>
+    <string name="profile">Profile</string>
+    <string name="application">Application</string>
+    <string name="message">Message</string>
+    <string name="notification">Notification</string>
+    <string name="home">Home</string>
+    <string name="logout">Logout</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="allApplications">All</string>
+    <string name="accepted">Accepted</string>
+    <string name="pending">Pending</string>
+    <string name="rejected">Rejected</string>
+    <string name="scheduledForInterview">Scheduled for Interview</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -34,13 +64,6 @@
         quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
         ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
         placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
-        convallis.\n\n
-        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
-        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
-        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
-        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
-        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
-        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+        convallis.
     </string>
 </resources>

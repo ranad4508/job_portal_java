@@ -101,16 +101,18 @@ public class HomeActivity extends AppCompatActivity {
                     if (itemId == R.id.navigation_home) {
                         // Already on home, do nothing
                         return true;
-                    } else if (itemId == R.id.navigation_list) {
+                    } else if (itemId == R.id.navigation_application) {
                         // Navigate to ApplicationActivity
                         Intent intent = new Intent(HomeActivity.this, ApplicationActivity.class);
                         startActivity(intent);
                         return true;
-                    } else if (itemId == R.id.navigation_message) {
-                        // Handle message navigation
+                    } else if (itemId == R.id.navigation_bookmark) {
+                        Intent intent = new Intent(HomeActivity.this, SavedJobs.class);
+                        startActivity(intent);
                         return true;
                     } else if (itemId == R.id.navigation_profile) {
-                        // Handle profile navigation
+                        Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
+                        startActivity(intent);
                         return true;
                     }
                     return false;

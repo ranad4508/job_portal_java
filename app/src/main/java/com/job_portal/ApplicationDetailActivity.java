@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,21 +12,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class ApplicationActivity extends AppCompatActivity {
-    LinearLayout applicationItem;
+public class ApplicationDetailActivity extends AppCompatActivity {
+    ImageView backToApplication;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.application_activity);
-        applicationItem = findViewById(R.id.applicationItem);
-        applicationItem.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.application_item_detail);
+        backToApplication = findViewById(R.id.backToApplication);
+        backToApplication.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ApplicationActivity.this, ApplicationDetailActivity.class);
+                Intent intent = new Intent(ApplicationDetailActivity.this, ApplicationActivity.class);
                 startActivity(intent);
             }
         });
-
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setSelectedItemId(R.id.navigation_application); // Set the correct item as selected
         bottomNav.setOnItemSelectedListener(navListener);
@@ -40,16 +40,16 @@ public class ApplicationActivity extends AppCompatActivity {
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     int itemId = item.getItemId();
                     if (itemId == R.id.navigation_home) {
-                        startActivity(new Intent(ApplicationActivity.this, HomeActivity.class));
+                        startActivity(new Intent(ApplicationDetailActivity.this, HomeActivity.class));
                         return true;
                     } else if (itemId == R.id.navigation_application) {
                         // Already on applications, do nothing
                         return true;
                     } else if (itemId == R.id.navigation_bookmark) {
-                        startActivity(new Intent(ApplicationActivity.this, SavedJobs.class));
+                        startActivity(new Intent(ApplicationDetailActivity.this, SavedJobs.class));
                         return true;
                     } else if (itemId == R.id.navigation_profile) {
-                        startActivity(new Intent(ApplicationActivity.this, ProfileActivity.class));
+                        startActivity(new Intent(ApplicationDetailActivity.this, ProfileActivity.class));
                         return true;
                     }
                     return false;
