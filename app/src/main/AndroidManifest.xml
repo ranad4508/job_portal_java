@@ -23,9 +23,27 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".JobRecommendationActivity"
-            android:exported="false"
-            />
+        <activity
+            android:name=".JobRecommendationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TipsDetailActicity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JobDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ApplyJobActicity"
+            android:exported="false" />
+        <activity
+            android:name=".ApplicationActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

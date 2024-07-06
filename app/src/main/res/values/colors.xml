@@ -10,6 +10,7 @@
     <color name="backgroundColor">#F6F7FB</color>
     <color name="textColorPrimary">#000000</color>
     <color name="textColorSecondary">#757575</color>
+    <color name="textColorTertiary">#6d9fff</color>
     <color name="cardBackground">#FFFFFF</color>
     <color name="buttonBackground">#E0E0E0</color>
 </resources>
